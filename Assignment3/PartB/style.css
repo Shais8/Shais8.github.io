@@ -3,3 +3,16 @@ html {
 }
 
 /* Your CSS below here */
+
+div{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  margin: 0 auto;
+  /*Since the base font is 16 pixels which is 1rem, than 1.1 gets it close to 17-18 pixels*/
+  font-size: 1.1rem;
+}
