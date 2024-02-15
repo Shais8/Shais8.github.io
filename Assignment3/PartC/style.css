@@ -43,3 +43,38 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: 'sans-serif';
+  src: url('Fonts/Aaargh.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'slab-serif';
+  src: url('Fonts/Aleo-Regular.otf');
+  src: url('Fonts/Aleo-LightItalic.otf') format('opentype'),
+       url('Fonts/Aleo-Light.otf') format('opentype'),
+       url('Fonts/Aleo-Italic.otf') format('opentype'),
+       url('Fonts/Aleo-BoldItalic.otf') format('opentype'),
+       url('Fonts/Aleo-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+h1, h2{
+  font-family: slab-serif;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
