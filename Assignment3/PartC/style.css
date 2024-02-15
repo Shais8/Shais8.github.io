@@ -91,7 +91,9 @@ p, li{
 section h2 + p{
   text-indent: 20px;
 }
-
+a{
+  outline: none;
+}
 a:link, a:visited{
   color: rgb(156, 69, 69)
 }
@@ -107,4 +109,35 @@ a[href*="http"]{
   background: url(external-link-52.png) no-repeat 100%;
   padding-right: 18px;
   background-size: 15px 15px;
+}
+
+ul, ol{
+  list-style-type: square;
+}
+
+nav ul{
+  margin-top: 1rem;
+}
+nav li{
+  list-style-type: none;
+}
+nav li a{
+  border: 1px solid rgb(228, 99, 99);
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5rem;
+  line-height: 3.5;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+nav li a:focus, nav li a:hover{
+  color: white;
+  background: rgb(203, 125, 125);
+}
+
+nav li a:active{
+  color: white;
+  background: rgb(52, 47, 47);
 }
