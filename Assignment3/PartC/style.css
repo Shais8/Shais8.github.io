@@ -91,3 +91,20 @@ p, li{
 section h2 + p{
   text-indent: 20px;
 }
+
+a:link, a:visited{
+  color: rgb(156, 69, 69)
+}
+a:focus, a:hover{
+  text-decoration: none;
+  color:rgb(255, 0, 0);
+}
+a:active{
+  color: rgb(63, 1, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+a[href*="http"]{
+  background: url(external-link-52.png) no-repeat 100%;
+  padding-right: 18px;
+  background-size: 15px 15px;
+}
