@@ -34,7 +34,8 @@
       </ul>
 
       <form class="search">
-        <input type="search" name="q" placeholder="Search query">
+        <label for="search-query" class="visually-hidden">Search query</label>
+        <input type="search" id="search-query" name="q" aria-label="Search query" placeholder="Search query">
         <input type="submit" value="Go!">
       </form>
     </nav>
@@ -52,17 +53,17 @@
         <table>
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+              <td scope="col">Bear Type</td>
+              <td scope="col">Coat</td>
+              <td scope="col">Adult size</td>
+              <td scope="col">Habitat</td>
+              <td scope="col">Lifespan</td>
+              <td scope="col">Diet</td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
+              <td scope="row">Wild</td>
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -70,7 +71,7 @@
               <td>Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
+              <td scope="row">Urban</td>
               <td>North Face</td>
               <td>18 to 22</td>
               <td>Condos and coffee shops</td>
@@ -93,9 +94,9 @@
         <audio controls>
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
-          <p>It looks like your browser doesn't support HTML5 audio players.</p>
+          <p>Your browser does not support HTML5 audio. Here is a <a href="media/bear.mp3">link to the audio</a> instead.</p>
         </audio>
-
+        <p>For those who need a text version of the audio, a transcript is available: <a href="bear-transcript.txt" target="_blank" rel="noopener noreferrer">Read the transcript.</a></p>
         <aside>
 
           <h3>About the author</h3>
@@ -103,7 +104,7 @@
         <p>He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.</p>
         </aside>
         <section class="comments">
-          <nav class="show-hide">Show comments</nav>
+          <nav class="show-hide" type="button">Show comments</nav>
 
           <nav class="comment-wrapper">
 
